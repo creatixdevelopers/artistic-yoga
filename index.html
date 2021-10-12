@@ -44,86 +44,139 @@
 
         <!-- ======= About ======= -->
         <section id="about" class="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src="assets/img/about.png" alt="">
+            <div class="left-bg">
+                <!-- about -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img src="assets/img/about.png" alt="">
+                        </div>
+                        <div class="col-lg-7 d-flex flex-column justify-content-center">
+                            <div class="about-content">
+                                <h1>What is Artistic Yoga?</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt est quis
+                                    erat
+                                    eleifend dictum. Sed enim turpis, lobortis eget vestibulum ac, dictum ac erat.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-8 d-flex flex-column justify-content-center">
-                        <div class="about-content">
-                            <h1>What is Artistic Yoga?</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt est quis erat
-                                eleifend dictum. Sed enim turpis, lobortis eget vestibulum ac, dictum ac erat.
-                            </p>
+                </div>
+                <!-- about videos -->
+                <div class="container about-videos">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-lg-6 pe-lg-5">
+                            <h3 class="my-5">Tip Of The Day</h3>
+                            <video id="player1" class="w-100" playsinline controls data-poster="/path/to/poster.jpg">
+                                <source src="assets/img/video.mp4" type="video/mp4"/>
+                            </video>
+                            <a href="#" class="mt-2 d-block text-center">know more</a>
+                        </div>
+                        <div class="col-lg-6 ps-lg-5">
+                            <h3 class="my-5">Tip Of The Day</h3>
+                            <video id="player2" class="w-100" playsinline controls data-poster="/path/to/poster.jpg">
+                                <source src="assets/img/video.mp4" type="video/mp4"/>
+                            </video>
+                            <a href="#" class="mt-2 d-block text-center">know more</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container about-videos">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-lg-5">
-                        <h3>Tip Of The Day</h3>
-                        <video id="player1" class="w-100" playsinline controls data-poster="/path/to/poster.jpg">
-                            <source src="assets/img/video.mp4" type="video/mp4"/>
-                        </video>
-                        <a href="#" class="mt-2 d-block text-center">know more</a>
-                    </div>
-                    <div class="col-lg-5">
-                        <h3>Tip Of The Day</h3>
-                        <video id="player2" class="w-100" playsinline controls data-poster="/path/to/poster.jpg">
-                            <source src="assets/img/video.mp4" type="video/mp4"/>
-                        </video>
-                        <a href="#" class="mt-2 d-block text-center">know more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container free-sessions">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-lg-5 d-flex flex-column justify-content-center">
-                        <div class="nav nav-pills d-flex flex-column" id="pills-tab" role="tablist">
-                            <p class="nav-item" role="presentation">
-                                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-home" role="tab"
-                                        aria-controls="pills-home" aria-selected="true">Daily Class
-                                </a>
-                            </p>
-                            <p class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-profile" role="tab"
-                                        aria-controls="pills-profile" aria-selected="false">Master Class
-                                </a>
-                            </p>
-                            <p class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-contact" role="tab"
-                                        aria-controls="pills-contact" aria-selected="false">Meditation
-                                </a>
-                            </p>
+
+            <div class="right-bg">
+                <!-- free sessions -->
+                <div class="container free-sessions">
+                    <h3 class="my-5">Try Our Free Sessions</h3>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <ul class="nav flex-column nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                       data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                       aria-selected="true">
+                                    <span>
+                                        <i class="fas fa-circle" style="margin-left: 0.5rem;"></i>
+                                        <i class="far fa-play-circle fa-2x"></i>
+                                        Daily Class
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill"
+                                       data-bs-target="#pills-profile" type="button" role="tab"
+                                       aria-controls="pills-profile" aria-selected="false">
+                                    <span>
+                                        <i class="fas fa-circle" style="margin-left: 0.5rem"></i>
+                                        <i class="far fa-play-circle fa-2x"></i>
+                                        Master Class
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                       data-bs-target="#pills-contact" type="button" role="tab"
+                                       aria-controls="pills-contact" aria-selected="false">
+                                    <span>
+                                        <i class="fas fa-circle" style="margin-left: 0.5rem"></i>
+                                        <i class="far fa-play-circle fa-2x"></i>
+                                        Meditation
+                                    </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="vl"></div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                     aria-labelledby="pills-home-tab">
+                                    <video id="player3" class="w-100" playsinline controls
+                                           data-poster="/path/to/poster.jpg">
+                                        <source src="assets/img/video.mp4" type="video/mp4"/>
+                                    </video>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                     aria-labelledby="pills-profile-tab">
+                                    <video id="player4" class="w-100" playsinline controls
+                                           data-poster="/path/to/poster.jpg">
+                                        <source src="assets/img/video.mp4" type="video/mp4"/>
+                                    </video>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                     aria-labelledby="pills-contact-tab">
+                                    <video id="player5" class="w-100" playsinline controls
+                                           data-poster="/path/to/poster.jpg">
+                                        <source src="assets/img/video.mp4" type="video/mp4"/>
+                                    </video>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                 aria-labelledby="pills-home-tab">
-                                <video id="player3" class="w-100" playsinline controls
-                                       data-poster="/path/to/poster.jpg">
-                                    <source src="assets/img/video.mp4" type="video/mp4"/>
-                                </video>
+                </div>
+                <!-- our programs -->
+                <div class="container our-programs">
+                    <h3 class="my-5">Our Programs</h3>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <img src="assets/img/products.png" alt="">
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row pb-3">
+                                <div class="col-lg-6">
+                                    <img src="assets/img/products.png" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="assets/img/products.png" alt="">
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                 aria-labelledby="pills-profile-tab">
-                                <video id="player4" class="w-100" playsinline controls
-                                       data-poster="/path/to/poster.jpg">
-                                    <source src="assets/img/video.mp4" type="video/mp4"/>
-                                </video>
-                            </div>
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                 aria-labelledby="pills-contact-tab">
-                                <video id="player5" class="w-100" playsinline controls
-                                       data-poster="/path/to/poster.jpg">
-                                    <source src="assets/img/video.mp4" type="video/mp4"/>
-                                </video>
+                            <div class="row pt-3">
+                                <div class="col-lg-6">
+                                    <img src="assets/img/products.png" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="assets/img/products.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
