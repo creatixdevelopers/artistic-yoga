@@ -46,6 +46,20 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 75% !important;
 }
 
+.left-bg {
+    background: url("../img/left-bg.png") no-repeat;
+    background-size: 25%;
+    background-position-x: left;
+    background-position-y: top;
+}
+
+.right-bg {
+    background: url("../img/right-bg.png") no-repeat;
+    background-size: 25%;
+    background-position-x: right;
+    background-position-y: center;
+}
+
 @media screen and (max-width: 776px) {
     .container {
         max-width: 95% !important;
@@ -424,21 +438,6 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .left-bg {
-    background: url("../img/left-bg.png") no-repeat;
-    background-size: 25%;
-    background-position-x: left;
-    background-position-y: top;
-}
-
-.about .right-bg {
-    background: url("../img/right-bg.png") no-repeat;
-    background-size: 25%;
-    background-position-x: right;
-    background-position-y: center;
-}
-
-
 .about img {
     width: 100%;
     height: 100%;
@@ -612,6 +611,7 @@ video {
     .faq-section .accordion .accordion-button:not(.collapsed)::after {
         background-size: 2rem;
         right: -2%;
+        top: -50%
     }
 
     .faq-section .accordion .accordion-button::after {
@@ -630,10 +630,16 @@ video {
 }
 
 .testimonials .testimonial-img-container {
-    width: 85%;
-    height: 100%;
+    width: 22rem;
+    height: 25rem;
     position: relative;
     margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials .testimonial-img-container {
+        margin: unset;
+    }
 }
 
 .testimonials .testimonial-img-container .box {
@@ -704,6 +710,56 @@ video {
     color: #000;
 }
 
+.blog-wrapper {
+    flex-direction: row;
+}
+
+.blog-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(77, 77, 77, 0.2);
+    box-sizing: border-box;
+    box-shadow: 2px 4px 28px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .blog-wrapper {
+        flex-direction: column;
+    }
+
+    .blog-card {
+        margin-right: unset;
+        margin-bottom: 2rem;
+    }
+}
+
+.blog-card .card-img-top {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 15rem;
+}
+
+.blog-card .card-title {
+    padding: 0.5rem 0;
+    color: #FE5266;
+    font-weight: lighter;
+}
+
+.blog-card .card-text {
+    font-weight: lighter;
+    padding: 0 0 2rem 0;
+    border-bottom: 1px solid #000;
+}
+
+.blog-card .blog-icons {
+    display: flex;
+}
+
+.home-blogs .blog-icons a {
+    margin-right: 1rem;
+}
 
 
 /*--------------------------------------------------------------
