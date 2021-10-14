@@ -30,7 +30,7 @@ body {
 
 a {
     color: #e03a3c;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover {
@@ -44,6 +44,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     max-width: 75% !important;
+}
+
+@media screen and (max-width: 776px) {
+    .container {
+        max-width: 95% !important;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -373,6 +379,12 @@ section {
     transform: skewY(-3deg);
 }
 
+@media (max-width: 768px) {
+    section {
+        padding: 20px 0;
+    }
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -450,13 +462,6 @@ video {
     margin-bottom: 2rem
 }
 
-@media (max-width: 768px) {
-    .about .about-content {
-        padding: 1rem;
-        margin: 1rem 0;
-    }
-}
-
 .about .about-videos {
     padding: 4rem 1rem;
 }
@@ -469,6 +474,26 @@ video {
 .about .free-sessions {
     padding: 4rem 1rem;
 }
+
+@media (max-width: 768px) {
+    .about img {
+        height: 90%;
+    }
+
+    .about .about-content {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .about .about-videos {
+        padding: 0rem 1rem;
+    }
+
+    .about .free-sessions {
+        padding: 0rem 1rem;
+    }
+}
+
 
 .about .free-sessions .nav-pills .nav-link {
     color: #8C8C8C;
@@ -522,83 +547,214 @@ video {
 --------------------------------------------------------------*/
 .faq-section .image-section img {
     width: 100%;
-    height: 100%;
     border-radius: 16px;
 }
 
-.faq-section #faq-accordion .accordion-button {
+.faq-section .accordion .accordion-button {
+    position: relative;
     background-color: #fdf8f4;
-    color: unset;
+    color: #000;
     font-weight: bold;
     border: unset;
     font-size: 1.2rem;
 }
 
-.faq-section #faq-accordion .accordion-button:focus {
+.faq-section .accordion .accordion-button:focus {
     border-color: unset;
     box-shadow: unset;
 }
 
-.faq-section #faq-accordion .accordion-button:not(.collapsed) {
+.faq-section .accordion .accordion-button:not(.collapsed) {
     border-color: unset;
     box-shadow: unset;
 }
 
-.faq-section #faq-accordion .accordion-body {
+.faq-section .accordion .accordion-body {
     background-color: #fdf8f4;
     color: unset;
 }
 
-.faq-section #faq-accordion .accordion-header {
+.faq-section .accordion .accordion-header {
     background-color: #fdf8f4;
     color: unset;
 }
 
-.faq-section #faq-accordion .accordion-item {
-    border: unset;
+.faq-section .accordion .accordion-item {
+    border-top: none;
     border-bottom: 1px solid rgba(254, 82, 102, 0.4);
+    border-right: none;
+    border-left: none;
     font-size: 1.1rem;
 }
 
-.faq-section #faq-accordion .accordion-button:not(.collapsed)::after {
+.faq-section .accordion .accordion-button:not(.collapsed)::after {
     background-image: url("../img/accordion-close.svg");
-    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -25%;
+    background-size: 2.6rem;
+    right: 2%;
 }
 
-.faq-section #faq-accordion .accordion-button::after {
+.faq-section .accordion .accordion-button::after {
     background-image: url("../img/accordion-open.svg");
-    object-fit: cover;
+    transition: ease-in;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 19%;
+    background-size: 2.5rem;
+    left: 90%;
 }
+
+@media screen and (max-width: 768px) {
+    .faq-section .accordion .accordion-button:not(.collapsed)::after {
+        background-size: 2rem;
+        right: -2%;
+    }
+
+    .faq-section .accordion .accordion-button::after {
+        background-size: 2rem;
+        left: 93%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials .wrapper {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.testimonials .testimonial-img-container {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    margin: 20px;
+}
+
+.testimonials .testimonial-img-container .box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.testimonials .testimonial-img-container .stack-top {
+    z-index: -1;
+    margin: 20px;
+    background-color: #FE5268;
+    border-radius: 16px;
+}
+
+.testimonials .carousel {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.testimonials .text {
+    display: flex;
+    align-items: center;
+    padding: 8rem 0 2rem 0;
+    background-image: url("../img/quote.svg");
+    background-position-y: top;
+    background-position-x: 15%;
+    background-size: 8rem;
+    background-repeat: no-repeat;
+}
+
+.testimonials .carousel .testimonial-content {
+    color: #F24397;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.testimonials .carousel .testimonial-client {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.testimonials .wrapper .slick-dots li button:before {
+    font-size: 20px;
+    color: white;
+}
+
+.testimonials .left-arrow {
+    position: absolute;
+    bottom: -15%;
+    left: 44%;
+}
+
+.testimonials .right-arrow {
+    position: absolute;
+    bottom: -15%;
+    right: 42%;
+}
+
+/*--------------------------------------------------------------
+# Home Blogs
+--------------------------------------------------------------*/
+.home-blogs h3 {
+    color: #000;
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-  color: #fff;
-  font-size: 14px;
-  background: black;
-}
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #FFF3E9;
-    color: black;
-}
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+footer {
+    color: #fff;
+    font-size: 14px;
+    background: black;
 }
 
-#footer svg{
+footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #FFF3E9;
     color: black;
 }
 
-#footer .footer-top p{
+footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+footer .footer-top .align-right {
+    text-align: right;
+}
+
+footer svg {
+    color: black;
+}
+
+footer .footer-top p {
     font-size: 1rem;
 }
 
-#footer #copyright{
+footer .footer-content {
+    width: 60%;
+}
+
+footer #copyright {
     background-color: black;
 }
 
-#footer h2, #footer h1{
+footer h2, footer h1 {
     font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+    footer .footer-top .align-right {
+        text-align: left;
+    }
+
+    footer .footer-content {
+        width: 100%;
+    }
 }
