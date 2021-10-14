@@ -42,6 +42,20 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Avenir LT Std', sans-serif;
 }
 
+.page-title {
+    margin: 8rem 0 2rem 0;
+    font-weight: normal;
+    color: #4d4d4d;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.page-title span {
+    color: #FE5266;
+    font-weight: bold;
+}
+
 .container {
     max-width: 75% !important;
 }
@@ -121,6 +135,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .login-btn:hover {
     color: #fff;
+}
+
+.profile-img {
+    height: 2.5rem;
+    margin-left: 70px;
 }
 
 @media (max-width: 992px) {
@@ -649,10 +668,11 @@ video {
     top: 0;
     left: 0;
     opacity: 1;
+    z-index: 2;
 }
 
 .testimonials .testimonial-img-container .stack-top {
-    z-index: -1;
+    z-index: 0;
     margin: 20px;
     background-color: #FE5268;
     border-radius: 16px;
@@ -721,7 +741,7 @@ video {
     box-shadow: 2px 4px 28px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     margin-right: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -731,7 +751,6 @@ video {
 
     .blog-card {
         margin-right: unset;
-        margin-bottom: 2rem;
     }
 }
 
@@ -757,10 +776,9 @@ video {
     display: flex;
 }
 
-.home-blogs .blog-icons a {
+.blog-card .blog-icons a {
     margin-right: 1rem;
 }
-
 
 /*--------------------------------------------------------------
 # Footer
@@ -814,3 +832,62 @@ footer h2, footer h1 {
         width: 100%;
     }
 }
+
+/*--------------------------------------------------------------
+# Dashboard
+--------------------------------------------------------------*/
+.dashboard-content .badge {
+    background-color: #dcdcdc !important;
+    color: #000000;
+    font-weight: lighter;
+    margin: 0.25rem;
+}
+
+.dashboard-content .benefits li {
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.dashboard-content .trainer {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.dashboard-content .trainer h4 {
+    border-bottom: 2px solid black;
+    width: max-content;
+    padding-bottom: 0.1rem;
+}
+
+/*--------------------------------------------------------------
+# Blogs
+--------------------------------------------------------------*/
+.blogs-carousel {
+    background-color: #FFF3E9;
+    padding: 5rem 0;
+}
+
+#blogsCarousel img {
+    width: 22rem;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+#blogsCarousel .slick-dots li button:before {
+    margin-top: 1rem;
+    opacity: 0.5;
+    color: #FE5266;
+    font-size: 15px;
+}
+
+#blogsCarousel .slick-dots li.slick-active button:before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .blogs-carousel-content {
+        margin-top: 3rem;
+    }
+}
+
