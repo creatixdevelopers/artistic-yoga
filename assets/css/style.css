@@ -56,6 +56,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+.page-subtitle {
+    color: #3E82D3;
+    font-weight: lighter;
+}
+
 .container {
     max-width: 75% !important;
 }
@@ -891,3 +896,153 @@ footer h2, footer h1 {
     }
 }
 
+/*--------------------------------------------------------------
+# Dashboard
+--------------------------------------------------------------*/
+.dashboard-carousel .slick-slide img {
+    width: 100%;
+}
+
+.dashboard-carousel .left-arrow {
+    position: absolute;
+    left: -7%;
+    top: 45%;
+}
+
+.dashboard-carousel .right-arrow {
+    position: absolute;
+    right: -7%;
+    top: 45%
+}
+
+.dashboard-carousel .card {
+    margin: 0.5rem 0.75rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.dashboard-carousel .card .card-header a {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dashboard-carousel .card .card-tag {
+    width: 3rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    background-image: radial-gradient(circle at 1.5rem 7.8rem, rgba(204, 0, 0, 0) 3.2rem, #D62A26 2rem)
+}
+
+.dashboard-carousel .card .card-tag p {
+    padding: 0.2rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.dashboard-carousel .card .card-badge {
+    width: 7rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    background: #F64C3B;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+}
+
+.dashboard-carousel .card .card-header {
+    padding: 0 !important;
+    border-radius: 16px;
+    position: relative;
+}
+
+.dashboard-carousel .card-body {
+    background: #fff;
+    width: 100%;
+    vertical-align: top;
+    padding: 0.2rem 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.dashboard-carousel .card-content {
+    color: #000000;
+    padding: 15px;
+}
+
+.dashboard-carousel .card-text p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+.about-banner {
+    width: 60%;
+}
+
+#aboutHeading {
+    padding: 10px 0 20px 0;
+}
+
+#aboutHeading h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 74px;
+    text-align: center;
+}
+
+#aboutHeading h2 span {
+    color: #FE5266;
+}
+
+#aboutPageContent p {
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.know-btn {
+    color: #fff;
+    padding: 8px 30px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-weight: 300;
+    display: inline-block;
+    background: linear-gradient(90deg, #FE5266 1.39%, #F84B7C 48.64%, #F24397 100%);
+    border-radius: 50px;
+}
+
+.know-btn:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .about-banner {
+        width: 100%;
+    }
+
+    .aboutPage-content {
+        padding-top: 1rem;
+    }
+
+    #aboutHeading h2 {
+        font-size: 32px;
+    }
+
+}

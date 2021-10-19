@@ -1,135 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<title>Artistic Yoga | Dashboard</title>
-		<meta content="" name="description">
-		<meta content="" name="keywords">
-		<!-- CSS Files -->
-		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/css/style.css" rel="stylesheet">
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Artistic Yoga | Dashboard</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <!-- CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/slick/slick.css" rel="stylesheet">
+        <link href="assets/vendor/slick/slick-theme.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
 
-	<body>
+    <body>
 
-		<!-- ======= Header ======= -->
-		<header class="fixed-top d-flex align-items-center" id="header">
-			<div class="container d-flex align-items-center">
-				<a class="logo me-auto" href="index.html"><img alt="" src="assets/img/logo.png"></a>
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center">
+            <div class="container d-flex align-items-center">
+                <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>
 
-				<nav class="navbar order-last order-lg-0" id="navbar">
-					<ul>
-						<li><a class="nav-link scrollto" href="#about">About Us</a></li>
-						<li><a class="nav-link scrollto" href="#services">Our Programs</a></li>
-						<li><a class="nav-link scrollto " href="#portfolio">1-on-1 Sessions</a></li>
-					</ul>
-					<i class="bi bi-list mobile-nav-toggle"></i>
-				</nav>
+                <nav id="navbar" class="navbar order-last order-lg-0">
+                    <ul>
+                        <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+                        <li><a class="nav-link scrollto" href="#services">Our Programs</a></li>
+                        <li><a class="nav-link scrollto " href="#portfolio">1-on-1 Sessions</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <a href="#login" class="login-btn scrollto">Login</a>
+            </div>
+        </header>
+        <!-- End Header -->
 
-				<img class="profile-img rounded" src="assets/img/header-icon.png">
-			</div>
-		</header>
-		<!-- End Header -->
+        <div class="container">
+            <h1 class="page-title" style="text-align: left">Welcome<span> User</span></h1>
+            <h2 class="page-subtitle">The Daily Class</h2>
+        </div>
 
-		<!-- ======= Video ======= -->
-		<section class="dashboard-video pb-0">
-			<div class="right-bg">
-				<div class="container" style="padding-top: 5rem">
-					<h2 class="my-4">Class 27 Hips and Back</h2>
-					<video class="w-100" controls data-poster="/path/to/poster.jpg" id="dashboardVideo" playsinline>
-						<source src="assets/img/video.mp4" type="video/mp4"/>
-					</video>
-					<hr class="mt-5" style="height: 2px">
-				</div>
-			</div>
-		</section>
-		<!-- ======= End Video ======= -->
+        <!-- ======= Video ======= -->
+        <section class="dashboard-video pb-0">
+            <div class="right-bg">
+                <div class="container py-2">
+                    <video class="w-100" controls data-poster="/path/to/poster.jpg" id="dashboardVideo" playsinline>
+                        <source src="assets/img/video.mp4" type="video/mp4"/>
+                    </video>
+                    <hr class="mt-5" style="height: 2px">
+                </div>
+            </div>
+        </section>
+        <!-- ======= End Video ======= -->
 
-		<!-- ======= Content ======= -->
-		<section class="dashboard-content pt-0">
-			<div class="left-bg">
-				<div class="container">
-					<h2 class="my-4">17th September 2021</h2>
-					<div class="d-flex justify-content-between mb-3">
-						<h4 class="fw-lighter">Medium Intensity</h4>
-						<h4 class="fw-lighter">300 - 400 Calories</h4>
-					</div>
-					<h4 class="fw-lighter mb-3">Welcome to our trial class!</h4>
-					<h4 class="fw-lighter">Choose a quiet space so that you can do the session uninterrupted. Make sure there is at least 2 hour gap
-						between meal and the class. Put all other devices and enjoy the session</h4>
+        <!-- ======= Testimonials Section ======= -->
+        <section class="archives">
 
-					<h4 class="fw-lighter mt-5 mb-3">Techniques:</h4>
-					<h4 class="techniques">
-						<span class="badge rounded-pill">Naukasana</span>
-						<span class="badge rounded-pill">Shalabhasana</span>
-						<span class="badge rounded-pill">Paschimottanasana</span>
-					</h4>
+            <div class="left-bg" style="background-position-y: center">
+                <!-- archives -->
+                <div class="container pb-5">
+                    <h3 class="mb-4" style="color: #F64C3B">Archives</h3>
+                    <div class="wrapper">
+                        <div class="archive-carousel dashboard-carousel">
+                            <!-- slide 1 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>21st September 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>21st Sept 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 2 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>21st September 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>21st Sept 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 3 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>21st September 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>21st Sept 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 4 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>21st September 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>21st Sept 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 5 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>21st September 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-tag">
+                                        <p>21st Sept 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					<h4 class="fw-lighter mt-5 mb-3">Highlights:</h4>
-					<h4 class="highlights">
-						<span class="badge rounded-pill">Strength</span>
-						<span class="badge rounded-pill">Flexibility</span>
-						<span class="badge rounded-pill">Endurance</span>
-					</h4>
+                <!-- masterclass -->
+                <div class="container py-5">
+                    <h3 class="mb-4" style="color: #9E57CD">Masterclass</h3>
+                    <div class="wrapper">
+                        <div class="masterclass-carousel dashboard-carousel">
+                            <!-- slide 1 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Breathing Exercises for anxiety issues</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 2 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Breathing Exercises for anxiety issues</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 3 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Breathing Exercises for anxiety issues</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 4 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Breathing Exercises for anxiety issues</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 5 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Breathing Exercises for anxiety issues</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					<h4 class="fw-lighter mt-5 mb-3">Benefits:</h4>
-					<ul class="benefits">
-						<li>Increase core strength</li>
-						<li>Boost spinal health</li>
-						<li>Connect within</li>
-						<li>Expand your breath</li>
-						<li>Enter a state of relaxation</li>
-					</ul>
+                <!-- popular classes -->
+                <div class="container py-5">
+                    <h3 class="mb-4" style="color: #3B958C">Popular Classes</h3>
+                    <div class="wrapper">
+                        <div class="popular-carousel dashboard-carousel">
+                            <!-- slide 1 -->
+                            <div>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="assets/img/archive1.png">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-content">
+                                                <div class="card-text">
+                                                    <p>21st September 2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="card card-badge">100 classes</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- slide 2 -->
+                            <div>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="assets/img/archive1.png">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-content">
+                                                <div class="card-text">
+                                                    <p>21st September 2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="card card-badge">100 classes</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- slide 3 -->
+                            <div>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="assets/img/archive1.png">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-content">
+                                                <div class="card-text">
+                                                    <p>21st September 2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="card card-badge">100 classes</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- slide 4 -->
+                            <div>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="assets/img/archive1.png">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-content">
+                                                <div class="card-text">
+                                                    <p>21st September 2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="card card-badge">100 classes</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- slide 5 -->
+                            <div>
+                                <a href="#">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <img src="assets/img/archive1.png">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-content">
+                                                <div class="card-text">
+                                                    <p>21st September 2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="card card-badge">100 classes</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					<h4 class="fw-lighter mt-5 mb-3">Trainer</h4>
-					<a class="trainer" href="#">
-						<h4 class="fw-lighter">Ashrei Mitra</h4>
-					</a>
-				</div>
-			</div>
-		</section>
-		<!-- ======= End Content ======= -->
+                <!-- meditation -->
+                <div class="container py-5">
+                    <h3 class="mb-4" style="color: #D9629C">Meditation</h3>
+                    <div class="wrapper">
+                        <div class="meditation-carousel dashboard-carousel">
+                            <!-- slide 1 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Yoga Nidra</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 2 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Yoga Nidra</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 3 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Yoga Nidra</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 4 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Yoga Nidra</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 5 -->
+                            <div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="assets/img/archive1.png">
+                                        <a href="#">
+                                            <img src="assets/img/play-btn.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-content">
+                                            <div class="card-text">
+                                                <p>Yoga Nidra</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= End Testimonials Section ======= -->
 
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="footer-contact">
+                            <h2>Let’s talk</h2>
+                            <h1>Book an appointment?</h1>
+                        </div>
+                        <div>
+                            <p class="mb-3">someone@example.com <a href="#"><i class="ms-2 fal fa-envelope fa-lg"></i>
+                            </a></p>
+                            <p class="align-right">+91- 385 526 5060 <a href="#"><i
+                                    class="ms-2 fab fa-whatsapp fa-lg"></i> </a></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae facilisis lorem.
+                            Integer non pharetra mauris, non tincidunt metus. Aenean in lectus diam... </p>
+                    </div>
+                </div>
+            </div>
 
-		<!-- ======= Footer ======= -->
-		<footer id="footer">
-			<div class="footer-top">
-				<div class="container">
-					<div class="d-flex justify-content-between flex-wrap">
-						<div class="footer-contact">
-							<h2>Let’s talk</h2>
-							<h1>Book an appointment?</h1>
-						</div>
-						<div>
-							<p class="mb-3">someone@example.com <a href="#"><i class="ms-2 fal fa-envelope fa-lg"></i>
-							</a></p>
-							<p class="align-right">+91- 385 526 5060 <a href="#"><i
-									class="ms-2 fab fa-whatsapp fa-lg"></i> </a></p>
-						</div>
-					</div>
-					<hr>
-					<div class="footer-content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae facilisis lorem.
-							Integer non pharetra mauris, non tincidunt metus. Aenean in lectus diam... </p>
-					</div>
-				</div>
-			</div>
+            <div class="container d-flex py-4 justify-content-center w-100" id="copyright">
+                © 2021 Copyright - Artistic yoga
+            </div>
+        </footer>
 
-			<div class="container d-flex py-4 justify-content-center w-100" id="copyright">
-				© 2021 Copyright - Artistic yoga
-			</div>
-		</footer>
+        <!-- ======= End Footer ======= -->
 
-		<!-- ======= End Footer ======= -->
-
-		<!-- JS Files -->
-		<script src="assets/vendor/jquery/jquery-3.3.1.slim.min.js"></script>
-		<script src="assets/vendor/popper/popper.min.js"></script>
-		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="assets/vendor/fontawesome/font-awesome.js"></script>
-		<script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+        <!-- JS Files -->
+        <script src="assets/vendor/jquery/jquery-3.3.1.slim.min.js"></script>
+        <script src="assets/vendor/popper/popper.min.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/vendor/slick/slick.min.js"></script>
+        <script src="assets/vendor/fontawesome/font-awesome.js"></script>
+        <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.archive-carousel').slick({
+                    speed: 500,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 10000,
+                    dots: false,
+                    centerMode: true,
+                    prevArrow: '<img class="left-arrow" src="assets/img/left-arrow.svg">',
+                    nextArrow: '<img class="right-arrow" src="assets/img/right-arrow.svg">',
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+                $('.masterclass-carousel').slick({
+                    speed: 500,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 10000,
+                    dots: false,
+                    centerMode: true,
+                    prevArrow: '<img class="left-arrow" src="assets/img/left-arrow.svg">',
+                    nextArrow: '<img class="right-arrow" src="assets/img/right-arrow.svg">',
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+                $('.popular-carousel').slick({
+                    speed: 500,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 10000,
+                    dots: false,
+                    centerMode: true,
+                    prevArrow: '<img class="left-arrow" src="assets/img/left-arrow.svg">',
+                    nextArrow: '<img class="right-arrow" src="assets/img/right-arrow.svg">',
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+                $('.meditation-carousel').slick({
+                    speed: 500,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 10000,
+                    dots: false,
+                    centerMode: true,
+                    prevArrow: '<img class="left-arrow" src="assets/img/left-arrow.svg">',
+                    nextArrow: '<img class="right-arrow" src="assets/img/right-arrow.svg">',
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+    </body>
 </html>
