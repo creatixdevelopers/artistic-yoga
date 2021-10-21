@@ -749,8 +749,7 @@ video {
     box-sizing: border-box;
     box-shadow: 2px 4px 28px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
-    margin-right: 1.5rem;
-    margin-bottom: 2rem;
+    margin: 0 0.75rem 2rem 0.75rem
 }
 
 @media screen and (max-width: 768px) {
@@ -1343,5 +1342,52 @@ footer h2, footer h1 {
     background: none;
 }
 
+/*--------------------------------------------------------------
+# About Founder
+--------------------------------------------------------------*/
+.founder-banner {
+    width: 60%;
+}
 
+.conversation .text {
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+    padding: 5rem 2rem;
+    background-image: url("../img/quote.svg");
+    background-position-y: top;
+    background-position-x: 10%;
+    background-size: 6rem;
+    background-repeat: no-repeat;
+    color: #F24397;
+    font-size: 20px;
+}
 
+.faq-carousel .left-arrow {
+    position: absolute;
+    top: 45%;
+    left: -5%;
+    width: 50px;
+    height: 50px;
+}
+
+.faq-carousel .right-arrow {
+    position: absolute;
+    top: 45%;
+    right: -5%;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .faq-carousel .left-arrow {
+        display: none;
+    }
+    .faq-carousel .right-arrow {
+        display: none;
+    }
+}
+
+.faq-carousel .blog-card {
+    box-shadow: 2px 4px 15px rgb(0 0 0 / 7%) !important;
+}
