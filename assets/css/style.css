@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #4d4d4d;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 60px;
 }
 
 .page-title span {
@@ -82,6 +82,10 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 776px) {
     .container {
         max-width: 95% !important;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
     }
 }
 
@@ -899,29 +903,29 @@ footer h2, footer h1 {
 /*--------------------------------------------------------------
 # Dashboard
 --------------------------------------------------------------*/
-.dashboard-carousel .slick-slide img {
+.dashboard-card .slick-slide img {
     width: 100%;
 }
 
-.dashboard-carousel .left-arrow {
+.dashboard-card .left-arrow {
     position: absolute;
     left: -7%;
     top: 45%;
 }
 
-.dashboard-carousel .right-arrow {
+.dashboard-card .right-arrow {
     position: absolute;
     right: -7%;
     top: 45%
 }
 
-.dashboard-carousel .card {
+.dashboard-card .card {
     margin: 0.5rem 0.75rem;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
 }
 
-.dashboard-carousel .card .card-header a {
+.dashboard-card .card .card-header a {
     position: absolute;
     width: 3rem;
     height: 3rem;
@@ -930,7 +934,7 @@ footer h2, footer h1 {
     transform: translate(-50%, -50%);
 }
 
-.dashboard-carousel .card .card-tag {
+.dashboard-card .card .card-tag {
     width: 3rem;
     height: 5rem;
     position: absolute;
@@ -939,7 +943,7 @@ footer h2, footer h1 {
     background-image: radial-gradient(circle at 1.5rem 7.8rem, rgba(204, 0, 0, 0) 3.2rem, #D62A26 2rem)
 }
 
-.dashboard-carousel .card .card-tag p {
+.dashboard-card .card .card-tag p {
     padding: 0.2rem;
     color: #ffffff;
     text-align: center;
@@ -948,7 +952,7 @@ footer h2, footer h1 {
     margin-top: 0.3rem;
 }
 
-.dashboard-carousel .card .card-badge {
+.dashboard-card .card .card-badge {
     width: 7rem;
     height: 1.5rem;
     position: absolute;
@@ -961,13 +965,13 @@ footer h2, footer h1 {
     padding: 0 1rem;
 }
 
-.dashboard-carousel .card .card-header {
+.dashboard-card .card .card-header {
     padding: 0 !important;
     border-radius: 16px;
     position: relative;
 }
 
-.dashboard-carousel .card-body {
+.dashboard-card .card-body {
     background: #fff;
     width: 100%;
     vertical-align: top;
@@ -976,12 +980,12 @@ footer h2, footer h1 {
     border-radius: 16px;
 }
 
-.dashboard-carousel .card-content {
+.dashboard-card .card-content {
     color: #000000;
     padding: 15px;
 }
 
-.dashboard-carousel .card-text p {
+.dashboard-card .card-text p {
     font-size: 20px;
     font-weight: normal;
 }
@@ -1182,3 +1186,162 @@ footer h2, footer h1 {
     margin-left: 0.7rem;
     height: 75%;
 }
+
+/*--------------------------------------------------------------
+# Login
+--------------------------------------------------------------*/
+.auth-btn {
+    background: linear-gradient(90deg, #FE5266 1.39%, #F84B7C 48.64%, #F24397 100%);
+    border-radius: 50px;
+    padding: 0.5rem 7rem;
+    outline: none;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.auth-btn:hover {
+    color: #fff;
+}
+
+.myForm input {
+    outline: none !important;
+    border: 1px solid rgba(77, 77, 77, 0.6);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.myForm .form-control:focus {
+    outline: none !important;
+    border: 1px solid rgba(77, 77, 77, 0.6);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+}
+
+.myForm .form-check-input {
+    outline: none;
+    border: 1px solid #4d4d4d;
+    border-radius: 1px;
+    transform: scale(1.3);
+    box-shadow: none;
+}
+
+.myForm .form-check-input:checked {
+    background-color: #FE5266;
+}
+
+.myForm .iti.iti--allow-dropdown {
+    width: 100%;
+}
+
+.myForm .iti--separate-dial-code .iti__selected-flag {
+    background: unset;
+}
+
+.myForm .iti--separate-dial-code .iti__selected-flag:hover {
+    background: unset;
+}
+
+.myForm .iti__flag.iti__in {
+    display: none;
+}
+
+.myForm label {
+    color: #FE5266;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.myForm .alternate {
+    font-weight: lighter;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Blogs Detailed
+--------------------------------------------------------------*/
+#blogsSingleCarousel img {
+    border-radius: 16px;
+}
+
+#blogsSingleCarousel .slick-dots li button:before {
+    margin-top: 1rem;
+    opacity: 0.5;
+    color: #FE5266;
+    font-size: 15px;
+}
+
+#blogsSingleCarousel .slick-dots li.slick-active button:before {
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Bookmarks
+--------------------------------------------------------------*/
+.toolbar .nav-tabs {
+    border-bottom: none;
+}
+
+.toolbar .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: none;
+    background: unset;
+}
+
+.toolbar .nav-link {
+    padding: 0;
+    color: #4D4D4D;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.toolbar .nav-link:hover {
+    border: none;
+    outline: none;
+}
+
+.toolbar .nav-link.active {
+    color: #FE5266;
+}
+
+.toolbar h2 {
+    margin-right: 3rem;
+    font-weight: lighter;
+}
+
+.toolbar .card {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid rgba(254, 82, 102, 0.6);
+}
+
+.toolbar .card .card-body {
+    padding: 0;
+}
+
+.toolbar .form-control {
+    background-color: transparent;
+    border: none;
+}
+
+.toolbar .form-control input {
+    outline: none !important;
+    border: none;
+    box-shadow: none;
+}
+
+.toolbar .form-control:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: none;
+}
+
+.toolbar .form-control input[type='search']:focus {
+    background: none;
+}
+
+
+
