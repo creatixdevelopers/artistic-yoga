@@ -902,8 +902,13 @@ footer h2, footer h1 {
 /*--------------------------------------------------------------
 # Dashboard
 --------------------------------------------------------------*/
+.dashboard-card .card-header img {
+    height: inherit;
+}
+
 .dashboard-card .slick-slide img {
     width: 100%;
+    height: inherit;
 }
 
 .dashboard-card .left-arrow {
@@ -952,15 +957,15 @@ footer h2, footer h1 {
 }
 
 .dashboard-card .card .card-badge {
-    width: 7rem;
-    height: 1.5rem;
+    width: 7.4rem;
+    height: 1.6rem;
     position: absolute;
     top: 2%;
     left: 0;
     background: #F64C3B;
     color: #ffffff;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0 1rem;
 }
 
@@ -968,6 +973,7 @@ footer h2, footer h1 {
     padding: 0 !important;
     border-radius: 16px;
     position: relative;
+    height: 10rem;
 }
 
 .dashboard-card .card-body {
@@ -987,6 +993,10 @@ footer h2, footer h1 {
 .dashboard-card .card-text p {
     font-size: 20px;
     font-weight: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden
 }
 
 
@@ -1383,6 +1393,7 @@ footer h2, footer h1 {
     .faq-carousel .left-arrow {
         display: none;
     }
+
     .faq-carousel .right-arrow {
         display: none;
     }
