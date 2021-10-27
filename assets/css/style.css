@@ -51,6 +51,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 60px;
 }
 
+.page-small-title {
+    margin: 8rem 0 2rem 0;
+    font-weight: normal;
+    text-align: left;
+    font-size: 30px;
+    color: #F84B7C;
+}
+
 .page-title span {
     color: #FE5266;
     font-weight: bold;
@@ -121,6 +129,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo img {
     max-height: 60px;
+}
+
+#header .dropdown-menu {
+    background: #FCF7F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 1rem !important;
+}
+
+#header .dropdown-item {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+#header .dropdown-item:hover {
+    background: transparent;
 }
 
 /*--------------------------------------------------------------
@@ -1401,4 +1424,100 @@ footer h2, footer h1 {
 
 .faq-carousel .blog-card {
     box-shadow: 2px 4px 15px rgb(0 0 0 / 7%) !important;
+}
+
+.subscribe .form-check {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid #4D4D4D;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.subscribe .form-check:has(.form-check-input) {
+    border: 1px solid red !important;
+}
+
+.subscribe .form-check-input[type=radio] {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin: 0 1rem 0 0;
+    box-shadow: none;
+    border: 1px solid #4d4d4d;
+}
+
+.subscribe .form-check-input:checked {
+    background-color: #FE5266;
+    border-color: #FE5266;
+}
+
+.subscribe .form-check-input:checked[type=radio] {
+    background-image: none !important;
+}
+
+
+.subscribe .form-check-label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribe .form-check-label h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.subscribe .form-check-label .info {
+    color: #FE5266;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.subscribe .form-check-label .cost {
+    color: #4d4d4d;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Profile
+--------------------------------------------------------------*/
+.btn-edit {
+    right: 42%;
+    top: 10rem;
+    background-color: #4D4D4D;
+    border-radius: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-edit {
+        right: 35%;
+    }
+}
+
+.profile-data .profile-description {
+    margin-bottom: 0.1rem;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 650;
+}
+
+.profile-data .profile-data {
+    font-size: 1.2rem;
+}
+
+.profile-data .profile-edit {
+    color: #F24397;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    text-decoration-color: #F24397;
 }
