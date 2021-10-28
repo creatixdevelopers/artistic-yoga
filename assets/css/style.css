@@ -6,6 +6,7 @@
 :root {
     scroll-behavior: smooth;
     --cyan: #1edcb6;
+    --red: #FE5266;
 }
 
 ::-moz-selection {
@@ -60,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-title span {
-    color: #FE5266;
+    color: var(--red);
     font-weight: bold;
 }
 
@@ -161,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
     font-weight: 300;
     display: inline-block;
-    background: linear-gradient(90deg, #FE5266 1.39%, #F84B7C 48.64%, #F24397 100%);
+    background: linear-gradient(90deg, var(--red) 1.39%, #F84B7C 48.64%, #F24397 100%);
     border-radius: 50px;
 }
 
@@ -604,14 +605,14 @@ video {
 }
 
 .about .our-programs .nav-tabs .nav-link.active p {
-    color: #FE5266;
-    border-bottom: 4px solid #FE5266;
+    color: var(--red);
+    border-bottom: 4px solid var(--red);
     padding-bottom: 0.3rem;
     font-weight: bolder;
 }
 
 .about .our-programs .programs-card {
-    border: 1px solid #FE5266;
+    border: 1px solid var(--red);
     border-radius: 17px;
     min-height: 33rem;
 }
@@ -756,7 +757,7 @@ video {
         margin-top: 2rem;
         padding: 0;
         justify-content: start;
-        color: #FE5266;
+        color: var(--red);
     }
 
     .about .our-programs .programs-card .bottom .timing-badge {
@@ -974,7 +975,7 @@ video {
 
 .blog-card .card-title {
     padding: 0.5rem 0;
-    color: #FE5266;
+    color: var(--red);
     font-weight: lighter;
 }
 
@@ -1089,7 +1090,7 @@ footer h2, footer h1 {
 #blogsCarousel .slick-dots li button:before {
     margin-top: 1rem;
     opacity: 0.5;
-    color: #FE5266;
+    color: var(--red);
     font-size: 15px;
 }
 
@@ -1223,7 +1224,7 @@ footer h2, footer h1 {
 }
 
 #aboutHeading h2 span {
-    color: #FE5266;
+    color: var(--red);
 }
 
 #aboutPageContent p {
@@ -1241,7 +1242,7 @@ footer h2, footer h1 {
     transition: 0.3s;
     font-weight: 300;
     display: inline-block;
-    background: linear-gradient(90deg, #FE5266 1.39%, #F84B7C 48.64%, #F24397 100%);
+    background: linear-gradient(90deg, var(--red) 1.39%, #F84B7C 48.64%, #F24397 100%);
     border-radius: 50px;
 }
 
@@ -1280,7 +1281,7 @@ footer h2, footer h1 {
 
 .teachers .teacher-name-carousel .slick-slide.slick-current {
     font-size: 20px;
-    color: #FE5266 !important;
+    color: var(--red) !important;
     font-weight: lighter;
 }
 
@@ -1404,7 +1405,7 @@ footer h2, footer h1 {
 # Login
 --------------------------------------------------------------*/
 .auth-btn {
-    background: linear-gradient(90deg, #FE5266 1.39%, #F84B7C 48.64%, #F24397 100%);
+    background: linear-gradient(90deg, var(--red) 1.39%, #F84B7C 48.64%, #F24397 100%);
     border-radius: 50px;
     padding: 0.5rem 7rem;
     outline: none;
@@ -1439,7 +1440,7 @@ footer h2, footer h1 {
 }
 
 .myForm .form-check-input:checked {
-    background-color: #FE5266;
+    background-color: var(--red);
 }
 
 .myForm .iti.iti--allow-dropdown {
@@ -1459,7 +1460,7 @@ footer h2, footer h1 {
 }
 
 .myForm label {
-    color: #FE5266;
+    color: var(--red);
     font-weight: lighter;
     font-size: 0.9rem;
     margin-bottom: 5px;
@@ -1482,7 +1483,7 @@ footer h2, footer h1 {
 #blogsSingleCarousel .slick-dots li button:before {
     margin-top: 1rem;
     opacity: 0.5;
-    color: #FE5266;
+    color: var(--red);
     font-size: 15px;
 }
 
@@ -1516,7 +1517,7 @@ footer h2, footer h1 {
 }
 
 .toolbar .nav-link.active {
-    color: #FE5266;
+    color: var(--red);
 }
 
 .toolbar h2 {
@@ -1633,8 +1634,8 @@ footer h2, footer h1 {
 }
 
 .subscribe .form-check-input:checked {
-    background-color: #FE5266;
-    border-color: #FE5266;
+    background-color: var(--red);
+    border-color: var(--red);
 }
 
 .subscribe .form-check-input:checked[type=radio] {
@@ -1658,7 +1659,7 @@ footer h2, footer h1 {
 }
 
 .subscribe .form-check-label .info {
-    color: #FE5266;
+    color: var(--red);
     font-weight: normal;
     margin-bottom: 5px;
 }
@@ -1736,34 +1737,91 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0
 }
 
-.card-2 {
-    background-color: #fff;
-    padding: 10px;
-    width: 350px;
-    height: 100px;
-    bottom: -50px;
-    left: 20px;
-    position: absolute;
-    border-radius: 5px
+/*--------------------------------------------------------------
+# Subscription History
+--------------------------------------------------------------*/
+.subscription-history {
+    height: 100vh;
+    overflow-y: scroll;
 }
 
-.card-2 .content {
-    margin-top: 50px
-}
-
-.card-2 .content a {
-    color: red
-}
-
-.form-control:focus {
-    box-shadow: none;
-    border: 2px solid red
-}
-
-.validate {
+.subscription-history .subscription-container {
+    border: solid 1px var(--red);
     border-radius: 20px;
-    height: 40px;
-    background-color: red;
-    border: 1px solid red;
-    width: 140px
+    padding: 2rem;
+    max-width: 100% !important;
+}
+
+.subscription-history .subscription-container p {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.subscription-history::-webkit-scrollbar {
+    width: 10px;
+}
+
+.subscription-history::-webkit-scrollbar-track {
+    background: white;
+    border: solid 1px var(--red);
+    border-radius: 1rem;
+}
+
+.subscription-history::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 1rem;
+}
+
+.subscription-history::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
+}
+
+/*--------------------------------------------------------------
+# Referral Rewards
+--------------------------------------------------------------*/
+.referral {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.referral .referral-container {
+    border: solid 1px var(--red);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 100% !important;
+}
+
+.referral .referral-container p {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.referral::-webkit-scrollbar {
+    width: 10px;
+}
+
+.referral::-webkit-scrollbar-track {
+    background: white;
+    border: solid 1px var(--red);
+    border-radius: 1rem;
+}
+
+.referral::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 1rem;
+}
+
+.referral::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
+}
+
+@media screen and (max-width: 768px) {
+    .subscription-history {
+        height: unset;
+        overflow-y: unset;
+    }
+    .referral {
+        height: unset;
+        overflow-y: unset;
+    }
 }
