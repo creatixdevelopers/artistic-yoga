@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .dropdown-menu {
     background: #FCF7F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin-top: 1rem !important;
 }
@@ -525,25 +525,10 @@ video {
     padding: 4rem 1rem;
 }
 
-@media (max-width: 768px) {
-    .about img {
-        height: 90%;
-    }
-
-    .about .about-content {
-        padding: 1rem;
-        margin: 1rem 0;
-    }
-
-    .about .about-videos {
-        padding: 0rem 1rem;
-    }
-
-    .about .free-sessions {
-        padding: 0rem 1rem;
-    }
+.about .free-sessions .nav-pills .nav-item {
+    display: flex;
+    align-items: center;
 }
-
 
 .about .free-sessions .nav-pills .nav-link {
     color: #8C8C8C;
@@ -590,6 +575,196 @@ video {
 
 .about .free-sessions .nav-pills .nav-link.active span svg.fa-play-circle {
     display: block;
+}
+
+.about .our-programs .timezone-select {
+    width: 15rem;
+    border: 1px solid rgba(77, 77, 77, 0.6);
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.about .our-programs .nav-tabs {
+    outline: none;
+    border-bottom: none;
+}
+
+.about .our-programs .nav-tabs .nav-link {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    color: #000;
+    outline: none;
+    border: none;
+}
+
+.about .our-programs .nav-tabs .nav-link p {
+    margin: 0;
+}
+
+.about .our-programs .nav-tabs .nav-link.active p {
+    color: #FE5266;
+    border-bottom: 4px solid #FE5266;
+    padding-bottom: 0.3rem;
+    font-weight: bolder;
+}
+
+.about .our-programs .programs-card {
+    border: 1px solid #FE5266;
+    border-radius: 17px;
+    min-height: 33rem;
+}
+
+.about .our-programs .programs-card .top {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 2rem;
+}
+
+.about .our-programs .programs-card img {
+    width: 100%;
+    height: auto;
+}
+
+.about .our-programs .programs-card h4 {
+    color: #000;
+    font-weight: bolder;
+}
+
+.about .our-programs .programs-card .type {
+    color: #A8A2A2;
+}
+
+.about .our-programs .programs-card .description {
+    color: #000;
+    width: 97%;
+}
+
+.about .our-programs .programs-card .book-now {
+    margin-top: 2rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: end;
+    color: #111;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.about .our-programs .programs-card .bottom {
+    margin-top: 2rem;
+    width: 75%;
+}
+
+.about .our-programs .programs-card .bottom .timing-badge {
+    background-color: #DCDCDC;
+    color: #000;
+    padding: 0.75rem 1.1rem;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0.5rem 0.25rem;
+}
+
+.about .our-programs .programs-card .bottom .timing-badge.ladies {
+    background-color: #FEA3AC;
+}
+
+.about .our-programs .programs-card .bottom .ladies-only {
+    margin: 1rem 1rem 0 0.5rem;
+    font-size: 13px;
+}
+
+.about .our-programs .programs-card .bottom .ladies-only svg {
+    background-color: #FEA3AC;
+    color: #FEA3AC;
+    border-radius: 1px;
+    margin-right: 3px;
+}
+
+@media (max-width: 768px) {
+    .about img {
+        height: 90%;
+    }
+
+    .about .about-content {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .about .about-videos {
+        padding: 0 1rem;
+    }
+
+    .about .free-sessions {
+        padding: 0 1rem;
+    }
+
+    .about #pills-tab {
+        flex-direction: row !important;
+    }
+
+    .about .free-sessions .nav-pills .nav-link span {
+        flex-direction: column;
+    }
+
+    .about .free-sessions .nav-pills .nav-link {
+        margin-bottom: 0 !important;
+        font-size: 14px;
+    }
+
+    .about .our-programs {
+        margin-top: 3rem;
+    }
+
+    .about .our-programs .timezone-select {
+        width: 9rem;
+    }
+
+    .about .our-programs .nav-tabs {
+        margin-top: 2rem;
+        overflow-x: scroll;
+        white-space: nowrap;
+        width: max-content;
+    }
+
+    .about .our-programs .nav-tabs .swiper-slide {
+        margin-right: 2px !important;
+        width: fit-content !important;
+    }
+
+    .about .our-programs .nav-tabs .nav-link {
+        margin-bottom: unset;
+        font-size: unset;
+    }
+
+    .about .our-programs .programs-card {
+        border: unset;
+        border-radius: unset;
+        min-height: unset;
+    }
+
+    .about .our-programs .programs-card .bottom {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .about .our-programs .programs-card .description {
+        width: 100%;
+    }
+
+    .about .our-programs .programs-card .book-now {
+        margin-top: 2rem;
+        padding: 0;
+        justify-content: start;
+        color: #FE5266;
+    }
+
+    .about .our-programs .programs-card .bottom .timing-badge {
+        padding: 0.75rem 1rem;
+        font-size: 13px;
+        margin: 0.5rem 0.1rem;
+    }
+
 }
 
 /*--------------------------------------------------------------
