@@ -861,7 +861,7 @@ video {
 @media screen and (max-width: 768px) {
     .faq-section .accordion .accordion-button:not(.collapsed)::after {
         background-size: 2rem;
-        right: -2%;
+        right: -3%;
         top: -50%
     }
 
